@@ -1,6 +1,6 @@
 # 6. Demonstração da plataforma
 
-Duração: **3min43s**, com a plataforma rodando em `http://127.0.0.1:8766`. O vídeo usa captura da aplicação real e narração neural em português brasileiro, identificada na entrega. Pode ser substituído por uma gravação narrada pelos integrantes se a disciplina assim exigir.
+Duração: **3min43s**, com a plataforma rodando em `http://127.0.0.1:8766`. O vídeo usa captura da aplicação real e narração neural em português brasileiro, identificada na entrega. Pode ser substituído por uma gravação narrada pelo autor se a disciplina assim exigir.
 
 | Tempo aproximado | Tela / ação | Conteúdo |
 | --- | --- | --- |

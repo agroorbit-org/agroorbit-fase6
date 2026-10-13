@@ -45,7 +45,7 @@ Cada execução reconstrói 14 dias simulados. Os cenários alteram apenas a pro
 
 O vídeo contém captura real da aplicação e narração neural em português brasileiro, sintetizada localmente com Kokoro. O roteiro foi adaptado para apresentação conversada, com intervalos curtos entre os blocos. O MP4 também acompanha o ZIP, em `output/video/agroorbit-fase6-demo.mp4`. A voz é sintética, não uma gravação de integrante.
 
-O arquivo `entrega.json` guarda a identificação e as pendências administrativas. A versão de preparação pode ser gerada mesmo com campos pendentes; o empacotador final bloqueia dados de equipe ou link de vídeo ausentes.
+Trabalho individual de **Samuel Ramos de Almeida — RM99134**. O arquivo `entrega.json` guarda a identificação do autor. A versão de preparação pode ser gerada com a turma ainda pendente; o empacotador final verifica a identificação, a turma e o link do vídeo, sem exigir outros integrantes na modalidade individual.
 
 ## Reproduzir dados e testes
 
@@ -100,5 +100,5 @@ docs/             relatório em Markdown, arquitetura e capturas
 scripts/          exportação, validação visual e empacotamento
 output/pdf/       relatório consolidado
 output/video/     vídeo de demonstração
-entrega.json      identificação da equipe e informações de submissão
+entrega.json      identificação do autor e informações de submissão
 ```

@@ -23,7 +23,6 @@ M, CONTENT = 44, W - 88
 GREEN, INK, MUTED, LIGHT, LINE = [colors.HexColor(c) for c in ("#274b35", "#283b2d", "#718069", "#f2f5eb", "#dfe7d6")]
 pdf = canvas.Canvas(str(OUT), pagesize=A4)
 pdf.setTitle("AgroOrbit Horizon - Fase 6 - Plataforma integrada")
-pdf.setAuthor("Equipe AgroOrbit - material preparado com assistência de IA")
 style = ParagraphStyle("body", fontName="Helvetica", fontSize=10, leading=15, textColor=INK, spaceAfter=8)
 small = ParagraphStyle("small", parent=style, fontSize=8, leading=11, textColor=MUTED)
 table_style = ParagraphStyle("cell", parent=style, fontSize=8.3, leading=11.5)
@@ -91,6 +90,7 @@ def picture(filename, y, max_height=520, caption=None):
 
 snapshot = json.loads((ROOT / "data" / "sample" / "dashboard.json").read_text())
 meta = json.loads((ROOT / "entrega.json").read_text())
+pdf.setAuthor(meta["responsible_name"] + " - material preparado com assistência de IA")
 model = json.loads((ROOT / "models" / "export_validation.json").read_text())
 browser = json.loads((ROOT / "docs" / "evidencias" / "browser-validation.json").read_text())
 video_path = ROOT / "output" / "video" / "video-info.json"
@@ -108,8 +108,8 @@ line("Sensores. Dados confiáveis. Decisões com evidências.", M + 27, 326, 10,
 line("FASE 6  /  PBL AGROSMART", M + 27, 364, 8, colors.HexColor("#b9ce9d"), True)
 y = text("A solução integra coleta ambiental simulada, preparação em Python, um modelo de risco de seca reaproveitado do AgroOrbit AI, regras automatizadas e um dashboard analítico. Esta fase evolui a base da Fase 5 para um fluxo executável e reproduzível.", y=418)
 y = table(["Escopo demonstrado", "Resultado verificável"], [["3 propriedades / 14 dias", "1.008 leituras horárias válidas no lote habitual"], ["Modelo + regras", "300 árvores e decisões vinculadas aos eventos de origem"], ["Entrega funcional", "Código, datasets, capturas, relatório e vídeo"]], y + 6, [210, CONTENT - 210])
-y = text(f"<b>Integrante identificado:</b> Samuel Ramos de Almeida - RM99134.<br/><b>Turma:</b> {escape(meta.get('class_name') or 'a confirmar')}. Demais integrantes aguardam confirmação. O enunciado exige equipe de 3 a 5 alunos.", y=y + 6, kind=small)
-text("Material acadêmico com assistência de IA. Os dados ambientais são sintéticos. A revisão e a submissão final cabem à equipe.", y=y + 3, kind=small)
+y = text(f"<b>Autor:</b> {escape(meta['responsible_name'])} - RM{escape(meta['responsible_rm'])}.<br/><b>Modalidade:</b> trabalho individual.<br/><b>Turma:</b> {escape(meta.get('class_name') or 'a confirmar')}.", y=y + 6, kind=small)
+text("Material acadêmico com assistência de IA. Os dados ambientais são sintéticos. A revisão e a submissão final cabem ao autor.", y=y + 3, kind=small)
 
 # 2: arquitetura
 start("01 / Arquitetura", "Um fluxo completo e rastreável", "O diagrama corresponde aos componentes executados nesta entrega.")
@@ -189,16 +189,15 @@ y = text("<b>Continuidade para a Fase 7:</b> adaptar sensores reais ao contrato,
 text("Fontes de evidência: tests/; docs/evidencias/browser-validation.json; models/export_validation.json. Instruções completas e proveniência em README.md e docs/08-proveniencia.md.", y=y + 4, kind=small)
 
 # 9: entrega
-start("08 / Reprodução e entrega", "Tudo no mesmo pacote", "Conferir a identificação da equipe antes da submissão acadêmica.")
+start("08 / Reprodução e entrega", "Tudo no mesmo pacote", "Trabalho individual de Samuel Ramos de Almeida - RM99134.")
 y = text("<b>Execução a partir do ZIP:</b> abra a pasta agroorbit-fase6 e execute <font name='Courier'>python3 -m backend.server</font>. A interface compilada já acompanha o pacote. Depois abra http://127.0.0.1:8766. No repositório, execute npm ci, npm run build e npm start.", y=172)
 duration_text = f"{int(video['duration_seconds'] // 60)} min {round(video['duration_seconds'] % 60):02d} s" if video else "em preparação"
-y = table(["Artefato", "Localização"], [["Código e instruções", "README.md, backend/, src/ e tests/"], ["Dados de entrada e saída", "data/sample/"], ["Arquitetura e explicações", "docs/01-arquitetura.md a 08-proveniencia.md"], ["Capturas da aplicação", "docs/evidencias/"], ["Relatório consolidado", "output/pdf/agroorbit-fase6-relatorio.pdf"], [f"Vídeo ({duration_text})", "output/video/agroorbit-fase6-demo.mp4"], ["Identificação da equipe", "entrega.json"]], y + 5, [165, CONTENT - 165])
-y = text("<b>Demonstração:</b> o vídeo mostra a aplicação em execução e contém narração sintetizada em português. A equipe deve revisar imagem e áudio antes da submissão. O MP4 acompanha o pacote e também está disponível no link abaixo.", y=y)
+y = table(["Artefato", "Localização"], [["Código e instruções", "README.md, backend/, src/ e tests/"], ["Dados de entrada e saída", "data/sample/"], ["Arquitetura e explicações", "docs/01-arquitetura.md a 08-proveniencia.md"], ["Capturas da aplicação", "docs/evidencias/"], ["Relatório consolidado", "output/pdf/agroorbit-fase6-relatorio.pdf"], [f"Vídeo ({duration_text})", "output/video/agroorbit-fase6-demo.mp4"], ["Identificação do autor", "entrega.json"]], y + 5, [165, CONTENT - 165])
+y = text("<b>Demonstração:</b> o vídeo mostra a aplicação em execução e contém narração sintetizada em português. O autor deve revisar imagem e áudio antes da submissão. O MP4 acompanha o pacote e também está disponível no link abaixo.", y=y)
 if meta.get("video_url"):
     y = text(f'<link href="{escape(meta["video_url"])}" color="#274b35"><u>Assistir ao vídeo demonstrativo no GitHub (MP4)</u></link>', y=y)
 else:
     y = text("Link do vídeo pendente: preencher video_url em entrega.json antes de submeter.", y=y)
-y = text("<b>Pendências administrativas:</b> confirmar turma e completar os nomes e RMs dos 3 a 5 integrantes. O responsável identificado é Samuel Ramos de Almeida, RM99134. O empacotador final bloqueia identificação incompleta; uma versão de preparação registra as pendências dentro do ZIP.", y=y)
 y = text("<b>Nome exigido:</b> nomecompleto_rm_turma_fase6_atividade.zip. Revise o conteúdo antes do envio: a atividade é submetida exclusivamente pela plataforma acadêmica.", y=y)
 text("Repositórios de origem: github.com/agroorbit-org/agroorbit-fase5; agroorbit-ai; agroorbit-vision. Commits e hashes foram registrados em docs/08-proveniencia.md e models/export_validation.json.", y=y + 3, kind=small)
 pdf.save()

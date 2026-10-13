@@ -1,6 +1,7 @@
 {
   "project": "AgroOrbit Horizon",
   "phase": 6,
+  "submission_mode": "individual",
   "responsible_name": "Samuel Ramos de Almeida",
   "responsible_rm": "99134",
   "class_name": null,
@@ -9,7 +10,7 @@
   ],
   "video_file": "output/video/agroorbit-fase6-demo.mp4",
   "video_url": "https://raw.githubusercontent.com/agroorbit-org/agroorbit-fase6/main/output/video/agroorbit-fase6-demo.mp4",
-  "video_narration": "Voz neural brasileira Kokoro v1.0 / pf_dora, sintetizada localmente; revisar com a equipe.",
+  "video_narration": "Voz neural brasileira Kokoro v1.0 / pf_dora, sintetizada localmente; revisar antes da submissão.",
   "submission_status": "preparacao",
-  "pending": ["Confirmar turma", "Completar equipe de 3 a 5 integrantes", "Revisar o vídeo com a equipe antes da submissão"]
+  "pending": ["Confirmar turma", "Revisar o vídeo antes da submissão"]
 }

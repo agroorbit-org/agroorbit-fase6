@@ -24,8 +24,11 @@ def main():
     if not info.get("class_name"):
         pending.append("Confirmar a turma e renomear o ZIP de acordo com o padrão da atividade.")
     members = info.get("members", [])
-    if not 3 <= len(members) <= 5 or any(not m.get("name") or not m.get("rm") for m in members):
-        pending.append("Confirmar nomes e RMs de todos os 3 a 5 integrantes exigidos.")
+    if info.get("submission_mode") == "individual":
+        if len(members) != 1 or not members[0].get("name") or not members[0].get("rm"):
+            pending.append("Informar nome e RM do único autor do trabalho individual.")
+    elif not 3 <= len(members) <= 5 or any(not m.get("name") or not m.get("rm") for m in members):
+        pending.append("Confirmar nomes e RMs de todos os 3 a 5 integrantes exigidos para uma entrega em equipe.")
     if len({m.get("rm") for m in members}) != len(members):
         pending.append("Corrigir RMs duplicados na equipe.")
     video = ROOT / info.get("video_file", "arquivo-inexistente")
@@ -55,7 +58,7 @@ def main():
             archive.write(file, "agroorbit-fase6/" + file.relative_to(ROOT).as_posix())
         archive.writestr("agroorbit-fase6/MANIFEST-SHA256.json", json.dumps(manifest, indent=2))
         if pending:
-            archive.writestr("agroorbit-fase6/PENDENCIAS.txt", "PACOTE DE PREPARAÇÃO - CONFERIR ANTES DO ENVIO\n\n" + "\n".join("- " + p for p in pending) + "\n\nVídeo: narração sintetizada. Revisar com a equipe.\n")
+            archive.writestr("agroorbit-fase6/PENDENCIAS.txt", "PACOTE DE PREPARAÇÃO - CONFERIR ANTES DO ENVIO\n\n" + "\n".join("- " + p for p in pending) + "\n\nVídeo: narração sintetizada. Revisar antes da submissão.\n")
     with zipfile.ZipFile(target) as archive:
         if archive.testzip() is not None:
             raise RuntimeError("Falha de integridade do ZIP.")

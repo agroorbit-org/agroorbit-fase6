@@ -22,4 +22,4 @@ O conjunto desta Fase 6 não contém tiles EuroSAT, imagens recoloridas, chamada
 
 ## Apoio de ferramentas
 
-Código, documentação e materiais de apresentação foram preparados com assistência de IA e devem ser revisados pela equipe. A narração automatizada do vídeo, quando presente, é voz sintetizada, não gravação de um integrante. As métricas e capturas são provenientes de execuções do código; os dados de entrada são simulados.
+Código, documentação e materiais de apresentação foram preparados com assistência de IA e devem ser revisados pelo autor. A narração automatizada do vídeo, quando presente, é voz sintetizada, não gravação do autor. As métricas e capturas são provenientes de execuções do código; os dados de entrada são simulados.
