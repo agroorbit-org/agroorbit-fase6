@@ -198,7 +198,6 @@ if meta.get("video_url"):
     y = text(f'<link href="{escape(meta["video_url"])}" color="#274b35"><u>Assistir ao vídeo demonstrativo no GitHub (MP4)</u></link>', y=y)
 else:
     y = text("Link do vídeo pendente: preencher video_url em entrega.json antes de submeter.", y=y)
-y = text("<b>Nome exigido:</b> nomecompleto_rm_turma_fase6_atividade.zip. Revise o conteúdo antes do envio: a atividade é submetida exclusivamente pela plataforma acadêmica.", y=y)
 text("Repositórios de origem: github.com/agroorbit-org/agroorbit-fase5; agroorbit-ai; agroorbit-vision. Commits e hashes foram registrados em docs/08-proveniencia.md e models/export_validation.json.", y=y + 3, kind=small)
 pdf.save()
 print(json.dumps({"path": str(OUT), "pages": page_num, "video_duration": duration_text}, ensure_ascii=False))
