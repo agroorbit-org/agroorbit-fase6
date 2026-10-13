@@ -40,7 +40,7 @@ def main():
     if missing:
         parser.error("Artefatos ausentes: " + ", ".join(missing))
     folders = ["backend", "src", "public", "models", "data/sample", "docs", "tests", "scripts", "dist", "output/pdf", "output/video", ".github"]
-    names = ["README.md", "package.json", "package-lock.json", "index.html", "vite.config.js", "requirements-model.txt", "entrega.json", ".gitignore", ".gitattributes"]
+    names = ["README.md", "package.json", "package-lock.json", "index.html", "vite.config.js", "requirements-model.txt", "requirements-video.txt", "entrega.json", ".gitignore", ".gitattributes"]
     files = {ROOT / name for name in names if (ROOT / name).is_file()}
     for folder in folders:
         files.update(p for p in (ROOT / folder).rglob("*") if p.is_file() and "__pycache__" not in p.parts and p.suffix != ".pyc")

@@ -40,10 +40,10 @@ Cada execução reconstrói 14 dias simulados. Os cenários alteram apenas a pro
 | 3. Processamento | [Pipeline](backend/pipeline.py), [dataset Silver](data/sample/silver.csv), [Gold](data/sample/gold.csv) e [fluxo](docs/03-processamento.md) |
 | 4. Automação inteligente | [Modelo](backend/model.py), [regras](backend/rules.py), [alertas](data/sample/alerts.json) e [decisões](docs/04-automacao.md) |
 | 5. Dashboard analítico | [Interface React](src/main.jsx), [indicadores](docs/05-dashboard.md) e [capturas](docs/evidencias/) |
-| 6. Demonstração de 3–5 min | [Vídeo completo, 4min41s (MP4)](https://raw.githubusercontent.com/agroorbit-org/agroorbit-fase6/main/output/video/agroorbit-fase6-demo.mp4), [roteiro](docs/06-roteiro-video.md) e [conferência](docs/07-entrega.md) |
+| 6. Demonstração de 3–5 min | [Vídeo completo, 3min43s (MP4)](https://raw.githubusercontent.com/agroorbit-org/agroorbit-fase6/main/output/video/agroorbit-fase6-demo.mp4), [roteiro](docs/06-roteiro-video.md) e [conferência](docs/07-entrega.md) |
 | Relatório consolidado | [Relatório PDF](output/pdf/agroorbit-fase6-relatorio.pdf) |
 
-O vídeo contém captura real da aplicação e narração sintetizada em português. O MP4 também acompanha o ZIP, em `output/video/agroorbit-fase6-demo.mp4`.
+O vídeo contém captura real da aplicação e narração neural em português brasileiro, sintetizada localmente com Kokoro. O roteiro foi adaptado para apresentação conversada, com intervalos curtos entre os blocos. O MP4 também acompanha o ZIP, em `output/video/agroorbit-fase6-demo.mp4`. A voz é sintética, não uma gravação de integrante.
 
 O arquivo `entrega.json` guarda a identificação e as pendências administrativas. A versão de preparação pode ser gerada mesmo com campos pendentes; o empacotador final bloqueia dados de equipe ou link de vídeo ausentes.
 

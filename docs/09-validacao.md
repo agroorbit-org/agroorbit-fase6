@@ -36,7 +36,7 @@ As capturas em `docs/evidencias/` são saídas de navegador, não montagens repr
 - Modelo: 500 entradas comparadas com o Random Forest original. Erro máximo `3.3306690738754696e-16`, menor que `1e-12`. Detalhes em `models/export_validation.json`.
 - Interface: `npm run build` concluído. As dependências do projeto não apresentaram vulnerabilidades no audit da instalação.
 - PDF: gerado por ReportLab, renderizado e revisado visualmente; nove páginas.
-- Vídeo: captura real da aplicação, narrada por voz sintetizada. Duração, codecs e verificação de decodificação em `output/video/video-info.json` e `video-validation.json`.
+- Vídeo revisado: captura real da aplicação, narrada por voz neural brasileira gerada localmente. Duração de 222,8 segundos (3min43s), vídeo H.264, áudio AAC, volume médio de -16,0 dB e decodificação completa aprovada. Não foram detectados silêncios superiores a 1,5 segundo no limiar de -42 dB. Metadados e verificações em `output/video/video-info.json` e `video-validation.json`.
 - ZIP: o empacotador reabre o arquivo, verifica CRC e confere SHA-256 de todos os itens contra o manifesto.
 
 Esses resultados comprovam o funcionamento de software dentro do cenário demonstrativo. Não são resultados de sensores físicos nem avaliação agronômica em dados reais.
