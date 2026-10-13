@@ -1,0 +1,45 @@
+{
+  "checks": [
+    {
+      "name": "Dashboard e indicadores calculados",
+      "passed": true
+    },
+    {
+      "name": "Filtro de propriedade e série de 7 dias",
+      "passed": true
+    },
+    {
+      "name": "Simulação de seca → inferência → alertas",
+      "passed": true
+    },
+    {
+      "name": "Recuperação após chuva reduz estimativa do modelo",
+      "passed": true
+    },
+    {
+      "name": "Falha de sensor suspende os indicadores atuais",
+      "passed": true
+    },
+    {
+      "name": "Download real de dataset do lote atual",
+      "passed": true
+    },
+    {
+      "name": "Navegação e layout responsivo em 390px",
+      "passed": true
+    },
+    {
+      "name": "Snapshot desconectado explicitamente somente leitura",
+      "passed": true
+    },
+    {
+      "name": "Nenhum erro JavaScript na execução",
+      "passed": true
+    }
+  ],
+  "total": 9,
+  "passed": 9,
+  "javascript_errors": [],
+  "viewport_desktop": "1440x1080",
+  "viewport_mobile": "390x844"
+}

@@ -1,0 +1,14 @@
+{
+  "received": 1013,
+  "accepted": 1008,
+  "quarantined": 4,
+  "duplicates": 1,
+  "acceptance_pct": 99.51,
+  "expected_unique": 1008,
+  "reasons": {
+    "soil_moisture_pct": 1,
+    "temperature_c": 1,
+    "captured_at": 1,
+    "farm_id/plot_id": 1
+  }
+}

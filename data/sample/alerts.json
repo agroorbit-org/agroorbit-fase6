@@ -1,0 +1,57 @@
+[
+  {
+    "id": "2e442480fa48:faz-002",
+    "farm_id": "faz-002",
+    "farm_name": "Fazenda Boa Vista",
+    "plot_id": "N-04",
+    "date": "2026-09-14",
+    "level": "alto",
+    "label": "Alto risco",
+    "action": "Priorizar inspeção do talhão e avaliar a necessidade de irrigação com o responsável técnico.",
+    "rules": [
+      {
+        "id": "R02",
+        "level": "atencao",
+        "reason": "Umidade média do solo em 33.4%, abaixo de 40%."
+      },
+      {
+        "id": "R03",
+        "level": "alto",
+        "reason": "Temperatura máxima de 36.0 °C e umidade do solo abaixo de 35%."
+      },
+      {
+        "id": "M02",
+        "level": "atencao",
+        "reason": "Random Forest estima risco de seca entre 50% e 70% (60.8%)."
+      }
+    ],
+    "version": "water-risk.v1",
+    "batch_id": "2e442480fa48",
+    "evidence_event_ids": [
+      "faz-002-13-00",
+      "faz-002-13-01",
+      "faz-002-13-02",
+      "faz-002-13-03",
+      "faz-002-13-04",
+      "faz-002-13-05",
+      "faz-002-13-06",
+      "faz-002-13-07",
+      "faz-002-13-08",
+      "faz-002-13-09",
+      "faz-002-13-10",
+      "faz-002-13-11",
+      "faz-002-13-12",
+      "faz-002-13-13",
+      "faz-002-13-14",
+      "faz-002-13-15",
+      "faz-002-13-16",
+      "faz-002-13-17",
+      "faz-002-13-18",
+      "faz-002-13-19",
+      "faz-002-13-20",
+      "faz-002-13-21",
+      "faz-002-13-22",
+      "faz-002-13-23"
+    ]
+  }
+]

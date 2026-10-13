@@ -1,0 +1,5 @@
+# Apenas para reexportar/verificar o modelo legado; Python 3.10-3.12.
+scikit-learn==1.5.2
+joblib==1.4.2
+pandas==2.2.3
+numpy==2.1.3

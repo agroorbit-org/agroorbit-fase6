@@ -1,0 +1,11 @@
+{
+  "source_commit": "94bdf06312fdbf12568166bb692ac24a243c3e9f",
+  "source_sha256": "254340408b797549fa054d21b762aa14059525cec439066dc0d29452e1af10c1",
+  "artifact_sha256": "ca74e97246496d14bc7ea36302400e15bf016f7edcb8e1f9a8b3edb0a8e64117",
+  "cases": 500,
+  "trees": 300,
+  "max_absolute_error": 3.3306690738754696e-16,
+  "tolerance": 1e-12,
+  "passed": true,
+  "note": "Paridade de software com o modelo legado, não validação agronômica nem nova avaliação de acurácia."
+}

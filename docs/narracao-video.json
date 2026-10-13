@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Visão geral da solução",
+    "text": "Este é o Agro Orbit Horizon, a plataforma integrada da fase seis do projeto Agro Smart. A solução ajuda a acompanhar o ambiente agrícola e transformar leituras em prioridades de ação. Partimos da arquitetura e da identidade da fase cinco, acrescentando coleta simulada, processamento executável, inteligência e visualização conectada. Esta demonstração usa três propriedades fictícias, durante quatorze dias. Todos os dados ambientais são sintéticos. Na visão do campo, selecionamos uma propriedade e acompanhamos umidade do solo, temperatura, chuva acumulada e risco estimado pelo modelo. O histórico permite observar a evolução diária, enquanto a tabela compara a situação das três áreas. Esta apresentação utiliza narração sintetizada."
+  },
+  {
+    "title": "Arquitetura e qualidade dos dados",
+    "text": "O fluxo começa com sensores virtuais de temperatura, umidade, luminosidade e chuva. Cada leitura é preservada na camada Bronze. Em seguida, o código Python valida o contrato, os horários, as unidades e as faixas permitidas. A camada Silver contém apenas leituras válidas e sem duplicatas. A camada Gold reúne os indicadores diários e as janelas de sete e quatorze dias. Essas informações alimentam o modelo de risco e o motor de regras. No lote habitual, são mil e treze eventos recebidos: mil e oito aceitos, quatro rejeitados e uma retransmissão removida. A quarentena conserva os motivos de rejeição. Os arquivos podem ser baixados para conferência."
+  },
+  {
+    "title": "Coleta e simulação de seca",
+    "text": "Agora vamos simular estresse hídrico na Fazenda Boa Vista. O diagrama representa os sensores virtuais e o gateway que organiza os eventos. A coleta tem granularidade de uma hora. A semente quarenta e dois torna o experimento reproduzível: os mesmos parâmetros produzem o mesmo lote. Ao executar, a plataforma reconstrói os quatorze dias e, a partir do oitavo, reduz a umidade e a chuva no talhão selecionado, aumenta a temperatura e simula queda do índice de vegetação. As outras propriedades permanecem com os mesmos dados. A confirmação indica que processamento, inferência e alertas foram atualizados. A tabela abaixo apresenta os valores efetivamente gerados pelo código."
+  },
+  {
+    "title": "Automação inteligente e evidências",
+    "text": "Na tela de inteligência, vemos o resultado calculado para este cenário. O modelo é o Random Forest já treinado no Agro Orbit AI, com trezentas árvores. Ele recebe quatorze características climáticas e de vegetação. Sua exportação foi comparada ao modelo original em quinhentos casos, preservando as previsões. A decisão final também usa regras explícitas, como umidade do solo abaixo de vinte e cinco por cento e a combinação de calor com solo seco. Cada motivo aparece com identificação e versão. A recomendação é registrada automaticamente e mantém a ligação com as leituras de origem. Os limiares são didáticos, e a avaliação do responsável técnico continua necessária."
+  },
+  {
+    "title": "Dashboard e recuperação após chuva",
+    "text": "O dashboard permite conferir o efeito da seca na série temporal. Podemos mudar o período ou escolher outro indicador, como temperatura e precipitação. Agora executamos recuperação após chuva na mesma propriedade. Esse cenário eleva a umidade do solo, reduz a temperatura e simula uma recuperação gradual da vegetação. Ao voltar para a visão do campo, os indicadores e a curva refletem os novos dados. A estimativa do modelo também diminui em relação ao cenário de seca. Essa comparação demonstra a integração entre coleta, preparação, análise e visualização. O mapa é apenas ilustrativo. A plataforma não apresenta esses dados como medições de sensores físicos ou imagens orbitais capturadas em tempo real."
+  },
+  {
+    "title": "Falha de sensor e próximos passos",
+    "text": "Por fim, executamos uma falha de sensor. As vinte e quatro leituras do último dia da propriedade ficam sem umidade válida e são encaminhadas à quarentena. A plataforma sinaliza dados desatualizados e suspende os indicadores atuais. Ela não usa valores antigos para aparentar uma coleta normal. O fluxo de dados permite inspecionar as rejeições e conferir a reconciliação do lote. Assim, a entrega reúne arquitetura, simulação, processamento, automação e dashboard em uma solução funcional. Para a fase sete, a evolução prevista inclui sensores reais, fontes orbitais, persistência de produção e validação agronômica. O código, os datasets, as capturas e o relatório acompanham o pacote para reprodução pela equipe e pelo avaliador."
+  }
+]

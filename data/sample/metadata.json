@@ -1,0 +1,10 @@
+{
+  "batch_id": "2e442480fa48",
+  "scenario": "baseline",
+  "scenario_label": "Monitoramento habitual",
+  "target": "faz-002",
+  "seed": 42,
+  "days": 14,
+  "interval_minutes": 60,
+  "simulator_version": "sim.v1"
+}

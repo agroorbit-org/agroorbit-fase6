@@ -1,0 +1,34 @@
+{
+  "duration_seconds": 280.52,
+  "resolution": "1440x1000",
+  "narration": "Luciana (pt-BR), voz sintetizada via macOS say, 200 palavras/minuto",
+  "capture": "Aplicação local real, Chromium + Playwright; seis segmentos sem dados inventados na edição",
+  "file": "output/video/agroorbit-fase6-demo.mp4",
+  "size_bytes": 12861923,
+  "segments": [
+    {
+      "title": "Visão geral da solução",
+      "duration_seconds": 50.17
+    },
+    {
+      "title": "Arquitetura e qualidade dos dados",
+      "duration_seconds": 44.62
+    },
+    {
+      "title": "Coleta e simulação de seca",
+      "duration_seconds": 44.48
+    },
+    {
+      "title": "Automação inteligente e evidências",
+      "duration_seconds": 44.94
+    },
+    {
+      "title": "Dashboard e recuperação após chuva",
+      "duration_seconds": 46.97
+    },
+    {
+      "title": "Falha de sensor e próximos passos",
+      "duration_seconds": 49.34
+    }
+  ]
+}

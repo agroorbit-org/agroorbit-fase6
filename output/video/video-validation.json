@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "duration_seconds": 280.63,
+  "mean_volume_db": -15.2,
+  "full_decode_success": true,
+  "video_codec": "h264",
+  "audio_codec": "aac",
+  "frames_for_visual_review": 6
+}

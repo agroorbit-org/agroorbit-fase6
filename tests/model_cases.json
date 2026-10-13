@@ -1,0 +1,230 @@
+[
+  {
+    "features": {
+      "estado": "BA",
+      "cultura": "soja",
+      "temp_min": 9.248824078840336,
+      "temp_max": 34.11812930476797,
+      "chuva_mm": 24.428849608488033,
+      "ndvi": 0.7588609919610456,
+      "ndwi": -0.22632506144147796,
+      "cobertura_nuvem": 52.77664563973982,
+      "chuva_acum_7d": 7.369845735467746,
+      "chuva_acum_14d": 98.45996396126215,
+      "temp_amplitude": 24.869305225927633,
+      "ndvi_tendencia_7d": -0.05109538228302274,
+      "dias_sem_chuva": 18,
+      "mes": 11
+    },
+    "probability": 0.41753944947792865
+  },
+  {
+    "features": {
+      "estado": "MA",
+      "cultura": "cana",
+      "temp_min": 18.008977596734187,
+      "temp_max": 31.74107483823229,
+      "chuva_mm": 18.990980869297672,
+      "ndvi": 0.5437711218485938,
+      "ndwi": -0.24199684692891588,
+      "cobertura_nuvem": 54.180395361010184,
+      "chuva_acum_7d": 35.83488994690093,
+      "chuva_acum_14d": 46.56336904552319,
+      "temp_amplitude": 13.732097241498103,
+      "ndvi_tendencia_7d": -0.16305714320115372,
+      "dias_sem_chuva": 8,
+      "mes": 12
+    },
+    "probability": 0.4105914953116855
+  },
+  {
+    "features": {
+      "estado": "RS",
+      "cultura": "teste",
+      "temp_min": 13.565787324648186,
+      "temp_max": 28.349073512275773,
+      "chuva_mm": 13.070932067721257,
+      "ndvi": 0.4694706724075708,
+      "ndwi": -0.16840586608860433,
+      "cobertura_nuvem": 42.99801558698789,
+      "chuva_acum_7d": 27.12075112315073,
+      "chuva_acum_14d": 118.78696017820812,
+      "temp_amplitude": 14.783286187627587,
+      "ndvi_tendencia_7d": -0.058822759604406194,
+      "dias_sem_chuva": 22,
+      "mes": 5
+    },
+    "probability": 0.3458126487199335
+  },
+  {
+    "features": {
+      "estado": "GO",
+      "cultura": "milho",
+      "temp_min": 20.576070044147414,
+      "temp_max": 33.769060050203215,
+      "chuva_mm": 5.212455358701114,
+      "ndvi": 0.784778110634903,
+      "ndwi": 0.5082382256332996,
+      "cobertura_nuvem": 59.68287337724089,
+      "chuva_acum_7d": 13.7664836557152,
+      "chuva_acum_14d": 81.33434349064406,
+      "temp_amplitude": 13.192990006055801,
+      "ndvi_tendencia_7d": 0.052845622334933506,
+      "dias_sem_chuva": 14,
+      "mes": 8
+    },
+    "probability": 0.347884349576478
+  },
+  {
+    "features": {
+      "estado": "RS",
+      "cultura": "milho",
+      "temp_min": 9.137239939572588,
+      "temp_max": 39.36398475219441,
+      "chuva_mm": 20.681525943906923,
+      "ndvi": 0.3823425156033834,
+      "ndwi": -0.2731721666578225,
+      "cobertura_nuvem": 29.33625638314063,
+      "chuva_acum_7d": 24.339985929487867,
+      "chuva_acum_14d": 134.42036650104376,
+      "temp_amplitude": 30.226744812621824,
+      "ndvi_tendencia_7d": 0.04682467376526006,
+      "dias_sem_chuva": 0,
+      "mes": 3
+    },
+    "probability": 0.33617036488545016
+  },
+  {
+    "features": {
+      "estado": "CE",
+      "cultura": "cana",
+      "temp_min": 21.871259525830087,
+      "temp_max": 37.335798715719,
+      "chuva_mm": 0.8597564803995106,
+      "ndvi": 0.38937052470698763,
+      "ndwi": -0.029908604750426504,
+      "cobertura_nuvem": 30.521871738153187,
+      "chuva_acum_7d": 77.64106974249228,
+      "chuva_acum_14d": 175.1798517873521,
+      "temp_amplitude": 15.464539189888914,
+      "ndvi_tendencia_7d": 0.09556666764338473,
+      "dias_sem_chuva": 18,
+      "mes": 8
+    },
+    "probability": 0.4814057858334189
+  },
+  {
+    "features": {
+      "estado": "SP",
+      "cultura": "algodao",
+      "temp_min": 22.267971021618994,
+      "temp_max": 29.42052627618177,
+      "chuva_mm": 17.89998758460382,
+      "ndvi": 0.747671019631268,
+      "ndwi": 0.41510873153915745,
+      "cobertura_nuvem": 41.07721824803608,
+      "chuva_acum_7d": 27.072815045361498,
+      "chuva_acum_14d": 47.21469148900096,
+      "temp_amplitude": 7.1525552545627775,
+      "ndvi_tendencia_7d": 0.08786245581200863,
+      "dias_sem_chuva": 11,
+      "mes": 6
+    },
+    "probability": 0.3301448708854068
+  },
+  {
+    "features": {
+      "estado": "TO",
+      "cultura": "soja",
+      "temp_min": 15.638426612097627,
+      "temp_max": 26.355053984589656,
+      "chuva_mm": 14.473909087261937,
+      "ndvi": 0.6440600714239212,
+      "ndwi": 0.1355714211428995,
+      "cobertura_nuvem": 24.536322882530193,
+      "chuva_acum_7d": 0.1968692415072848,
+      "chuva_acum_14d": 26.761928459965077,
+      "temp_amplitude": 10.71662737249203,
+      "ndvi_tendencia_7d": 0.04084882555728281,
+      "dias_sem_chuva": 3,
+      "mes": 10
+    },
+    "probability": 0.3862347983830389
+  },
+  {
+    "features": {
+      "estado": "MT",
+      "cultura": "arroz",
+      "temp_min": 22.4426893258086,
+      "temp_max": 28.753344946741052,
+      "chuva_mm": 17.382083749521605,
+      "ndvi": 0.5871947567310607,
+      "ndwi": 0.349270736743532,
+      "cobertura_nuvem": 79.23886791807791,
+      "chuva_acum_7d": 10.346396531283562,
+      "chuva_acum_14d": 81.7587416470813,
+      "temp_amplitude": 6.310655620932451,
+      "ndvi_tendencia_7d": 0.0706354002421094,
+      "dias_sem_chuva": 21,
+      "mes": 3
+    },
+    "probability": 0.3942405271453076
+  },
+  {
+    "features": {
+      "estado": "CE",
+      "cultura": "laranja",
+      "temp_min": 12.643360682192634,
+      "temp_max": 36.24195420302024,
+      "chuva_mm": 20.814471150128135,
+      "ndvi": 0.7836916740940392,
+      "ndwi": 0.5219482795301595,
+      "cobertura_nuvem": 16.252313798146474,
+      "chuva_acum_7d": 17.96199394746717,
+      "chuva_acum_14d": 132.11615189740863,
+      "temp_amplitude": 23.598593520827606,
+      "ndvi_tendencia_7d": 0.18939354567417355,
+      "dias_sem_chuva": 9,
+      "mes": 8
+    },
+    "probability": 0.2967181973888297
+  },
+  {
+    "features": {
+      "estado": "XX",
+      "cultura": "arroz",
+      "temp_min": 13.658839907669156,
+      "temp_max": 40.25693231441897,
+      "chuva_mm": 27.950760524287606,
+      "ndvi": 0.25704374405505226,
+      "ndwi": 0.3916984658932267,
+      "cobertura_nuvem": 78.32941990064371,
+      "chuva_acum_7d": 84.14386967408247,
+      "chuva_acum_14d": 160.84971645214313,
+      "temp_amplitude": 26.598092406749814,
+      "ndvi_tendencia_7d": -0.11426725760983798,
+      "dias_sem_chuva": 12,
+      "mes": 12
+    },
+    "probability": 0.44657566819598304
+  },
+  {
+    "features": {
+      "estado": "GO",
+      "cultura": "laranja",
+      "temp_min": 16.172641363938865,
+      "temp_max": 41.040893835295705,
+      "chuva_mm": 11.481009655868293,
+      "ndvi": 0.43175428581404807,
+      "ndwi": 0.18387782981528528,
+      "cobertura_nuvem": 73.124989370539,
+      "chuva_acum_7d": 97.74993549319885,
+      "chuva_acum_14d": 212.09889287017018,
+      "temp_amplitude": 24.86825247135684,
+      "ndvi_tendencia_7d": 0.09277467805168793,
+      "dias_sem_chuva": 11,
+      "mes": 8
+    },
+    "probability": 0.42657579417362024
+  }
+]
